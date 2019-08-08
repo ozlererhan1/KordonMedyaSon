@@ -1,0 +1,462 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="KordonMedyaSonHali.SiteMaster" %>
+
+<%@ Register Assembly="DevExpress.Web.v19.1, Version=19.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Namespace="DevExpress.Web" TagPrefix="dx" %>
+
+<!DOCTYPE html>
+
+
+<html lang="tr">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%: Page.Title %> - Kordon Medya | Kordon TV | Kordon FM | İmbat FM | Kordelya FM</title>
+
+    <webopt:BundleReference runat="server" Path="~/Content/css" />
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <link href="Content/font-awesome.min.css" rel="stylesheet" />
+    <link href="Content/font-awesome.css" rel="stylesheet" />
+    <link href="Content/Site.css" rel="stylesheet" />
+    <script src="Scripts/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="https://hosted.muses.org/mrp.js"></script>
+        <script src="Scripts/bootstrap.js"></script>
+
+    <%----------------------------------------------------------------------%>
+
+
+    <link href="Content/Site.css" rel="stylesheet" />
+     <link href="Content/youtube.css" rel="stylesheet" />
+    <link href="Content/jplayer.blue.monday.min.css" rel="stylesheet" />
+    <script src="Scripts/jplayer.playlist.min.js"></script>
+   
+
+
+
+</head>
+<body>
+
+    <form id="form1" runat="server">
+        <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <nav class="navbar navbar-expand-lg  fixed-top">
+                        <a class="navbar-brand" href="index.aspx">
+                            <img src="img/test7.png" />
+                        </a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                            <div class="navbar-nav" style="background-color: white">
+                                <a class="nav-item nav-link active" style="color: #bb5c5c;" href="index.aspx">Ana Sayfa <span class="sr-only">(current)</span></a>
+                                <a class="nav-item nav-link" style="color: #bb5c5c;" href="#">Hakkımızda</a>
+                                <a class="nav-item nav-link" style="color: #bb5c5c;" href="Contact.aspx">İletişim</a>
+                                <a class="nav-item nav-link" style="color: #bb5c5c;" href="frekans.aspx">Frekanslar</a>
+                                <a class="nav-item nav-link" style="color: #bb5c5c;" href="Addver.aspx">Reklam</a>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card" style="width: 100%">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="card-header" style="text-align: center;">
+                                    <i class="fa fa-headphones  fa-1x" aria-hidden="true">&nbsp &nbsp CANLI DİNLE</i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="card table-bordered mb-3" style="width: 100%; margin-top: 3%;">
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <img src="img/imbattest10.png" />
+                                    </div>
+                                    <div class="col-md-5">
+
+                                        <script type="text/javascript">
+                                            MRP.insert({
+                                                'url': 'http://38.96.148.18:8127/;',
+                                                'codec': 'mp3',
+                                                'volume': 100,
+                                                'autoplay': false,
+                                                'jsevents': true,
+                                                'buffering': 0,
+                                                'title': 'a',
+                                                'wmode': 'transparent',
+                                                'skin': 'xavi3',
+                                                'width': 100,
+                                                'height': 75
+                                            });
+                                        </script>
+                                        <!-- ENDS: AUTO-GENERATED MUSES RADIO PLAYER CODE -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="card table-bordered mb-3" style="width: 100%">
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <img src="img/kordontest.png" />
+                                    </div>
+                                    <div class="col-md-5">
+                                        <script type="text/javascript">
+                                            MRP.insert({
+                                                'url': 'http://38.96.148.39:8588/;',
+                                                'codec': 'mp3',
+                                                'volume': 100,
+                                                'autoplay': false,
+                                                'jsevents': true,
+                                                'buffering': 0,
+                                                'title': 'a',
+                                                'wmode': 'transparent',
+                                                'skin': 'xavi3',
+                                                'width': 100,
+                                                'height': 75
+                                            });
+                                        </script>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="card table-bordered mb-3" style="width: 100%">
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <img src="img/kordelyatest3.png" />
+                                    </div>
+                                    <div class="col-md-5">
+                                        <script type="text/javascript">
+                                            MRP.insert({
+                                                'url': 'http://38.96.148.39:8488/;',
+                                                'codec': 'mp3',
+                                                'volume': 100,
+                                                'autoplay': false,
+                                                'jsevents': true,
+                                                'buffering': 0,
+                                                'title': 'a',
+                                                'wmode': 'transparent',
+                                                'skin': 'xavi3',
+                                                'width': 100,
+                                                'height': 75
+                                            });
+                                        </script>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="row">
+                        <div class="card" style="width: 100%; margin-left: 3%; margin-right: 3%; margin-top: 3%;">
+                            <div class="card-header" style="text-align: center;">
+                                <i class="fa fa-envelope-o fa-1x" aria-hidden="true">&nbsp &nbsp İLETİŞİM</i>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">Lütfen bize sorularınızı, yorumlarınızı ve önerilerinizi göndermekten çekinmeyin. Her e-postayı okuyoruz ve sizin fikirleriniz önemsiyoruz</p>
+                                <a href="Contact.aspx" style="color: #bb5c5c;" class="card-link">İletişime Geç</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="card" style="width: 100%; margin-left: 3%; margin-right: 3%; margin-top: 3%">
+                            <div class="card-header" style="text-align: center;">
+                                <i class="fa fa-handshake-o fa-1x" aria-hidden="true">&nbsp &nbsp REKLAM</i>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">Radyolarımızda reklam vermek ve detaylar hakkında bilgi alabilirsiniz.</p>
+                                <a href="Addver.aspx" style="color: #bb5c5c;" class="card-link">Detaylar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="card" style="width: 100%; margin-left: 3%; margin-right: 3%; margin-top: 3%">
+                            <div class="card-header" style="text-align: center;">
+                                <i class="fa fa-rocket fa-1x" aria-hidden="true">&nbsp &nbsp UYGULAMALARIMIZ</i>
+                            </div>
+                            <div class="card-body">
+                                <a href="https://play.google.com/store/apps/details?id=com.plusdt.kordonradyo&hl=tr">
+                                    <img alt="" src="img/app2.png" /></a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-6">
+                    <asp:ContentPlaceHolder ID="MainContent" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+                <div class="col-md-3">
+                    <div class="card" style="width: 100%">
+                        <div class="card-header" style="text-align: center;">
+                            <i class="fa fa-star fa-1x" aria-hidden="true">&nbsp &nbsp TOP 10</i>
+                        </div>
+                        <div class="music-right">
+                            <!--/video-main-->
+                            <div class="video-main">
+                                <div class="video-record-list">
+                                    <div id="jp_container_1" class="jp-video jp-video-270p" role="application" aria-label="media player">
+                                        <div class="jp-type-playlist">
+                                            <div id="jquery_jplayer_1" class="jp-jplayer" style="width: 100%; height: 270px;">
+                                                <img id="jp_poster_0" src="video/play1.png" style="width: 100%; height: 270px; display: inline;"><video id="jp_video_0" preload="metadata" src="video/zekimuren.mp4" title="1. Zeki Müren " style="width: 0px; height: 0px;"></video>
+                                            </div>
+                                            <div class="jp-gui">
+                                                <div class="jp-video-play" style="display: block;">
+                                                    <button class="jp-video-play-icon" role="button" tabindex="0">play</button>
+                                                </div>
+                                                <div class="jp-interface">
+                                                    <div class="jp-progress">
+                                                        <div class="jp-seek-bar" style="width: 100%;">
+                                                            <div class="jp-play-bar" style="width: 0%;"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="jp-current-time" role="timer" aria-label="time">00:00</div>
+                                                    <div class="jp-duration" role="timer" aria-label="duration">00:18</div>
+                                                    <div class="jp-controls-holder">
+                                                        <div class="jp-controls">
+                                                            <button class="jp-previous" role="button" tabindex="0">previous</button>
+                                                            <button class="jp-play" role="button" tabindex="0">play</button>
+                                                        </div>
+                                                        <div class="jp-volume-controls">
+                                                            <button class="jp-mute" role="button" tabindex="0">mute</button>
+                                                            <button class="jp-volume-max" role="button" tabindex="0">max volume</button>
+                                                            <div class="jp-volume-bar">
+                                                                <div class="jp-volume-bar-value" style="width: 100%;"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="jp-details" style="display: none;">
+                                                        <div class="jp-title" aria-label="title">1. Zeki Müren-Elbet Birgün Buluşacağız.</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="jp-playlist">
+                                                <ul style="display: block;">
+                                                    <li class="jp-playlist-current">
+                                                        <div><a href="javascript:;" class="jp-playlist-item-remove" style="display: none;">×</a><a href="javascript:;" class="jp-playlist-item jp-playlist-current" tabindex="0">1. Ellie-Goulding <span class="jp-artist">by Pixar</span></a></div>
+                                                    </li>
+                                                    <li>
+                                                        <div><a href="javascript:;" class="jp-playlist-item-remove" style="display: none;">×</a><a href="javascript:;" class="jp-playlist-item" tabindex="0">2. Mark-Ronson-Uptown <span class="jp-artist">by Pixar</span></a></div>
+                                                    </li>
+                                                    <li>
+                                                        <div><a href="javascript:;" class="jp-playlist-item-remove" style="display: none;">×</a><a href="javascript:;" class="jp-playlist-item" tabindex="0">3. Ellie-Goulding <span class="jp-artist">by Pixar</span></a></div>
+                                                    </li>
+                                                    <li>
+                                                        <div><a href="javascript:;" class="jp-playlist-item-remove" style="display: none;">×</a><a href="javascript:;" class="jp-playlist-item" tabindex="0">4. Maroon-Sugar <span class="jp-artist">by Pixar</span></a></div>
+                                                    </li>
+                                                    <li>
+                                                        <div><a href="javascript:;" class="jp-playlist-item-remove" style="display: none;">×</a><a href="javascript:;" class="jp-playlist-item" tabindex="0">5. Pharrell-Williams <span class="jp-artist">by Pixar</span></a></div>
+                                                    </li>
+                                                    <li>
+                                                        <div><a href="javascript:;" class="jp-playlist-item-remove" style="display: none;">×</a><a href="javascript:;" class="jp-playlist-item" tabindex="0">6. Ellie-Goulding <span class="jp-artist">by Pixar</span></a></div>
+                                                    </li>
+                                                    <li>
+                                                        <div><a href="javascript:;" class="jp-playlist-item-remove" style="display: none;">×</a><a href="javascript:;" class="jp-playlist-item" tabindex="0">7. Pharrell-Williams <span class="jp-artist">by Pixar</span></a></div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="jp-no-solution" style="display: none;">
+                                                <span>Update Required</span>
+                                                To play the media you will need to either update your browser to a recent version or update your <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- script for play-list -->
+                        <link href="css/jplayer.blue.monday.min.css" rel="stylesheet" type="text/css">
+                        <script src="Scripts/jquery.jplayer.min.js"></script>
+                        <script src="Scripts/jplayer.playlist.min.js"></script>
+                        <script type="text/javascript">
+                            //<![CDATA[
+                            $(document).ready(function () {
+
+                                new jPlayerPlaylist({
+                                    jPlayer: "#jquery_jplayer_1",
+                                    cssSelectorAncestor: "#jp_container_1"
+                                }, [
+
+                                        {
+                                            title: "1. Zeki Müren-Elbet Bir Gün Buluşacağız",
+                                            artist: "",
+                                        mp4: "video/zekimuren.mp4",
+                                        ogv: "video/zekimuren.mp4",
+                                        webmv: "video/zekimuren.mp4",
+                                        },
+                                        {
+                                            title: "2. Mark-Ronson-Uptown",
+                                            artist: "",
+                                            mp4: "<%= msg %>",
+                                            ogv: "<%= msg %>",
+                                            webmv: "<%= msg %>",
+                                        },
+                                        {
+                                            title: "3. Cem Karaca-Tamirci Çırağı",
+                                            artist: "",
+                                            mp4: "video/tamirciciragi.mp4",
+                                            ogv: "video/tamirciciragi.mp4",
+                                            webmv: "video/tamirciciragi.mp4",
+                                        },
+                                        {
+                                            title: "4. Candan Erçetin-Yalan",
+                                            artist: "",
+                                            mp4: "video/candanercetin.mp4",
+                                            ogv: "video/Mcandanercetin.mp4",
+                                            webmv: "video/candanercetin.mp4",
+                                        },
+                                        {
+                                            title: "5. Barış Manço-Nane Limon Kabuğu",
+                                            artist: "",
+                                            mp4: "video/barisabi.mp4",
+                                            ogv: "video/barisabi.mp4",
+                                            webmv: "video/barisabi.mp4",
+                                        },
+                                        {
+                                            title: "6. Demet Sağıroğlu-Arnavut Kaldırımı",
+                                            artist: "",
+                                            mp4: "video/demetsagir.mp4",
+                                            ogv: "video/demetsagir.mp4",
+                                            webmv: "video/demetsagir.mp4",
+                                        },
+                                        {
+                                            title: "7. Reyhan Karaca-Sevdik Sevdalandık",
+                                            artist: "",
+                                            mp4: "video/reyhankaraca.mp4",
+                                            ogv: "video/reyhankaraca.mp4",
+                                            webmv: "video/reyhankaraca.mp4",
+                                        },
+                                        {
+                                            title: "8. MFÖ-Ele Güne Karşı",
+                                            artist: "",
+                                            mp4: "video/mfo.mp4",
+                                            ogv: "video/mfo.mp4",
+                                            webmv: "video/mfo.mp4",
+                                        },
+                                        {
+                                            title: "9. Erkin Koray-Fesuphanallah",
+                                            artist: "",
+                                            mp4: "video/erkinkoray.mp4",
+                                            ogv: "video/erkinkoray.mp4",
+                                            webmv: "video/erkinkoray.mp4",
+                                        },
+                                        {
+                                            title: "10. Ajda Pekkan-Baksana Talihe",
+                                            artist: "",
+                                            mp4: "video/ajdapekkan.mp4",
+                                            ogv: "video/ajdapekkan.mp4",
+                                            webmv: "video/ajdapekkan.mp4",
+                                        }
+                                    ], {
+                                        swfPath: "../../dist/jplayer",
+                                        supplied: "webmv,ogv,mp4",
+                                        useStateClassSkin: true,
+                                        autoBlur: false,
+                                        smoothPlayBar: true,
+                                        keyEnabled: true
+                                    });
+
+                            });
+				//]]>
+                        </script>
+                    </div>
+                    <div class="row">
+                        <div class="card" style="width: 100%; margin-left: 3%; margin-right: 3%; margin-top: 3%">
+                            <div class="card-header" style="text-align: center;">
+                                <i class="fa fa-info-circle fa-1x" aria-hidden="true">&nbsp &nbsp FREKANSLAR</i>
+                            </div>
+                            <div class="list-group">
+                                <button type="button" class="list-group-item list-group-item-action"><a class="nav-link" style="color: #bb5c5c;" href="frekans.aspx">KORDON FM</a></button>
+                                <button type="button" class="list-group-item list-group-item-action"><a class="nav-link" style="color: #bb5c5c;" href="frekans.aspx">İMBAT FM</a></button>
+                                <button type="button" class="list-group-item list-group-item-action"><a class="nav-link" style="color: #bb5c5c;" href="frekans.aspx">KORDELYA FM</a></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <footer class="page-footer font-small " style="background-color: lightgrey">
+            <div class="container text-center text-md-left">
+                <div class="row text-center text-md-left mt-3 pb-3">
+                    <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                        <h6 class="text-uppercase mb-4 font-weight-bold">Kordon Medya</h6>
+                        <p>
+                            Here you can use rows and columns to organize your footer content. Lorem ipsum dolor sit amet,
+          consectetur
+          adipisicing elit.
+                        </p>
+                    </div>
+                    <hr class="w-100 clearfix d-md-none">
+                    <div class="col-md-4 col-lg-2 col-xl-2 mx-auto mt-3">
+                        <h6 class="text-uppercase mb-4 font-weight-bold">Markalarımız</h6>
+                        <p>
+                            <a>Kordon TV</a>
+                        </p>
+                        <p>
+                            <a>Kordon FM</a>
+                        </p>
+                        <p>
+                            <a>İmbat FM</a>
+                        </p>
+                        <p>
+                            <a>Kordelya FM</a>
+                        </p>
+                    </div>
+                    <hr class="w-100 clearfix d-md-none">
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                        <h6 class="text-uppercase mb-4 font-weight-bold">İletişim</h6>
+                        <p>
+                            <i class="fa fa-home mr-3"></i>New York, NY 10012, US
+                        </p>
+                        <p>
+                            <i class="fa fa-envelope mr-3"></i>info@gmail.com
+                        </p>
+                        <p>
+                            <i class="fa fa-phone mr-3"></i>+ 01 234 567 88
+                        </p>
+                        <p>
+                            <i class="fa fa-print mr-3"></i>+ 01 234 567 89
+                        </p>
+                    </div>
+                </div>
+                <hr>
+                <div class="row d-flex align-items-center">
+                    <div class="col-md-7 col-lg-8">
+                        <p class="text-center text-md-left">
+                            © 2019 Copyright:
+              <strong>kordonmedya.com</strong>
+                        </p>
+
+                    </div>
+                    <div class="col-md-5 col-lg-4 ml-lg-0">
+                        <div class="text-center text-md-right">
+                            <ul class="list-unstyled list-inline">
+                                <li class="list-inline-item">
+                                    <a class="btn-floating btn-sm rgba-white-slight mx-1" style="color: #bb5c5c;" href="https://www.facebook.com/kordonmedya.grubu">
+                                        <i class="fa fa-facebook-f fa-2x"></i>
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a class="btn-floating btn-sm rgba-white-slight mx-1" style="color: #bb5c5c;" href="https://www.instagram.com/kordonmedya/?hl=tr">
+                                        <i class="fa fa-instagram fa-2x"></i>
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </form>
+</body>
+</html>
